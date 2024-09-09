@@ -1,69 +1,139 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+    padding: 20px;
 }
 
+/* Header styling */
 header {
-    background-color: #262f38;
-    color: #fff;
-    padding: 10px 0;
-}
-
-header .container {
-    width: 90%;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Align items vertically */
+    background-color: #f4ecec;
+    }
+/* Logo section */
+.logo {
+    display: flex;
+    align-items: center; /* Vertically center the logo and text */
 }
 
-header h1 {
-    margin: 0;
+.logo img {
+    height: 70px; /* Adjust the logo size */
+    width: auto;
+    /* Space between the logo and name */
 }
-
-header img {
-    height: 100px;
-    width: 150px;
-}
-
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    list-style: none;
     display: flex;
+    gap: 18px;
+
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin: 0;
+    font-size: 2rem;
 }
 
 nav ul li a {
-    color: #fff;
+    color: rgb(7, 3, 3);
     text-decoration: none;
+    transition: background-color 0.3s;
+    
 }
 
+nav ul li a:hover {
+    background-color: #888;
+}
+
+
+
+
 a {
-    color: blue;
+    text-decoration-color:  rgb(31, 31, 206);
     text-decoration: none;
 }
 a:hover {
     text-decoration: underline;
 }
+.a2{
+    display: block;
+    margin-top: 30px;
+}
+
+.a3{
+    display: block;
+    margin-top: 30px;
+}.a4{
+    display: block;
+    margin-top: 30px;
+}.a5{
+    display: block;
+    margin-top: 30px;
+}
+.a6{
+    display: block;
+    margin-top: 30px;
+}
+.a7{
+    display: block;
+    margin-top: 30px;
+}.a8{
+    display: block;
+    margin-top: 30px;
+}.a9{
+    display: block;
+    margin-top: 30px;
+}
+
 
 section {
     padding: 60px 0;
     text-align: center;
 }
-
+u2 li {
+    font-size: 2rem;
+    display: block;
+    margin-top: 30px;
+}
+.u1 li{
+    font-size: 1rem;
+    color: black;
+    display: block;
+    margin-top: 30px;
+}
+.u1 li dl{
+    font-size: 2rem;
+    color: black;
+    display: block;
+    margin-top: 30px;
+}
+.i5{
+    display: block;
+    margin-top: 50px;
+    font-size: 3rem;
+    color: black;
+    align-items: center;
+    text-align: center;
+}
+.h5{
+    display: block;
+    margin-top: 50px;
+    font-size: 3rem;
+    color: black;
+    align-items: center;
+    text-align: center;
+} 
 
 
 .content {
     text-align: center;
-    color: white; /* Adjust based on your background */
+    color: rgb(76, 40, 204); /* Adjust based on your background */
     padding: 20px;
     background: rgba(164, 221, 143, 0.5); /* Optional: Adds a semi-transparent background behind the text */
     border-radius: 10px;
@@ -74,17 +144,142 @@ section {
     margin: 0 auto;
 }
  
+.logo{height:60px;
+       width: 80px;}
+/* Container to hold the image and text */
+.inherit{
+    height: 500px;
+    width:1600px;
+    display: block;
+    margin-top: 3opx;
+}
+
+/* Text overlay styling */
+.overlay-texts {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: rgb(74, 43, 43);
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Optional shadow for better readability */
+}
+.head{
+    color: black;
+}
+.p2{
+    font-size: 2rem;
+    font-style: italic;
+    color: #160c4c;
+    display:block;
+    margin-top: 30px;
+}
+
+ol li {
+    font-size:2rem ;
+    color: #2b34b1;
+    font-style:calc();
+
+}
+
+.i2{
+    margin-top: auto;
+    height: 800px;
+   width: 1200px;
+   display: block;
+   margin-top: 40px;
+   }
+.content {
+    display: grid;                  /* Enables grid layout */
+    grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+    gap: 20px;  
+    color: #ccc; 
+    column-gap:3rem ;                   /* Adds space between columns */
+  }
+  .h2{
+    display: block;
+  margin-top: 40px;}
+  .hh2{
+    display: block;
+  margin-top: 40px;}
+  .hh3{
+    display: block;
+  margin-top: 50px;}
+  .ol1{
+    display: block;
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #000;
+  }
+  
+  .box1{
+    padding: 50px;
+    background-color: rgb(101, 110, 235);
+    font-size: 2rem;
+  }
+  .s1{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+
+  }
+  .se11{
+    display: block;
+    margin-bottom: 60px;
+  }
+    
+  .l1{
+    font-size: 1rem;
+    color: black;
+  }
+  .l1 li dl{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    display: block;
+    margin-top: 40px;
+  }
+  .se2{
+    width: 1000px;
+    height: 400px; 
+    display: block;
+    margin-top: 50px;
+  }
+  .im1{
+    display: block;
+    margin-top: 50px;
+  }
+  .hs{
+    font-size: 3rem;
+    color: rgb(6, 4, 4);
+    align-items: normal;
+    display: block;
+    margin-top: 50px;
+    text-align: left;
+  }
+ 
 h1 {
     text-align: center;
     align-items: center;
     font-size: 3rem;
-    color:rgb(243, 232, 232);
+    color:rgb(19, 13, 13);
     font-style: italic;
     
 }
 img{
     height: 400px;
     width: 1600px;
+}
+h5{
+    font-size: 5rem;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #007bff;
+}
+ul{
+    font-size: 3rem;
+    color: #160c4c;
 }
 
 h2{
@@ -95,7 +290,7 @@ h2{
     font-style: italic;
 }
 ol{
-    font-size:1rem ;
+    font-size:2rem ;
 }
 h3{
     font-size: 2rem;
@@ -150,31 +345,37 @@ form button {
     cursor: pointer;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 footer {
-    background-color: #333; /* Dark background color */
-    color: #fff; /* White text color */
-    text-align: center; /* Center-align text */
-    padding: 20px 0; /* Padding on top and bottom */
-    position: relative; /* Change to fixed to stick at bottom */
-    width: 100%;
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
 }
 
 .footer-container {
-    max-width: 1200px; /* Max width to center content */
-    margin: 0 auto; /* Center content horizontally */
+    display: flex;
+    justify-content: center;
 }
 
-.footer-links {
-    margin: 10px 0;
+.footer-column {
+    margin: 0 20px;
 }
 
-.footer-links a {
-    color: #fff; /* White color for links */
-    margin: 0 10px; /* Margin between links */
-    text-decoration: none; /* Remove underline */
+.footer-column a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-.footer-links a:hover {
-    text-decoration: underline; /* Underline on hover */
+.footer-column a:hover {
+    text-decoration: underline;
 }
+
+
 
